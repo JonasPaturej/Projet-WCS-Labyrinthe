@@ -1,0 +1,317 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	width: 400px;
+	margin: 0 auto;
+	background-image:url("fond2.jpg");
+	filter:saturate(50%);
+}
+
+#image
+{
+	width: 400px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+#menu li
+{
+	display: inline-block;
+	width: 400px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: darkgreen;
+	color: white;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin: 0 1px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+#menu a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+}
+
+#menu li:hover
+{
+	background-color: green;
+}
+
+.navbar
+{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute; 
+	width:400px;
+}
+	
+.navbar li
+{
+    height: auto;
+    width: 200px; 
+    float:left; 
+    text-align: center; 
+    list-style: none;  
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+	transition:1s;
+}
+
+.navbar a
+{							
+    padding: 18px 0;  
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none; 
+    color: white; 
+    display: block;
+}
+
+.navbar li:hover
+{
+    background-color: darkgrey;
+} 
+
+.navbar li ul
+{
+    display: none;
+    height: auto;									
+    margin: 0; 
+    padding: 0; 
+}				
+
+.navbar li:hover ul
+{
+    display: block;
+}
+
+.navbar li ul li 
+{
+    background-color: grey;
+} 
+
+.navbar li ul li a:hover
+{
+    background-color: #a3a1a1;
+}
+
+#Présentation
+{
+	margin-top:200px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Synopsis
+{
+	margin-top:40px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Résumé
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Casting
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+table
+{
+	margin : 0 auto;
+	margin-top: 35px;
+	text-align: center;
+	
+}
+
+th
+{
+	background-image:url(fond.jpg);
+	color:white;
+	font-size: xxx-large;
+}
+
+tr
+{
+	background-color:black;
+	color:white;
+}
+
+#Descriptif
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Bandeannonce
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+p
+{
+	color: white;
+	background-color:#663300;
+	padding:5px;
+	border: solid 2px black;
+}
+
+p::first-letter
+{
+	color:darkgrey;
+	text-transform:uppercase;
+	font-size: xx-large;
+}
+
+a
+{
+	text-decoration:none;
+	color: green;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color:red;
+}
+
+.voirplus
+{
+	color:red;
+	background-color: #663300;
+	border:hidden;
+}
+
+#text
+{
+	visibility:hidden;
+	max-height:0%;
+}
+
+.reduced {
+	max-height: 0px;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.expanded {
+    max-height: 500px;
+    transition: 500ms;
+}
+
+h2
+{
+	margin-top: 10px;
+	color:lime;
+	border-bottom:solid 1px lime;
+}
+
+.picture-left
+{
+	width:160px;
+	border: solid 1px grey;
+	margin-left: 120px;
+	transition:0.5s;
+}
+
+.picture-left:hover
+{
+	transform: scale(1.1);
+}
+
+iframe
+{
+	margin-top:20px;
+	margin-bottom:10px;
+	width:400px;
+	height:260px;
+}
+
+#footer{
+	background-color:darkgray;
+	color:white;
+	text-align: center;
+	font-weight: bold;
+	font-size:large;
+}
+
+#footer::first-letter{
+	color:white;
+	font-size: large;
+}
+
+
+#buttonscroll
+{
+	display: block;
+	z-index: 99;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+	background-color: rgba(128, 128, 128, 0.602);
+}
+
+#buttonscroll:hover,
+#buttonscroll:focus,
+#buttonscroll:focus-within 
+{
+	cursor: pointer;
+	background-color: rgba(0, 128, 0, 0.601);
+}

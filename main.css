@@ -1,0 +1,311 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	background-image:url("fond2.jpg");
+	filter:saturate(50%);
+}
+
+#screen
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#image
+{
+	width: 1200px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+#menu li
+{
+	display: inline-block;
+	width: 398px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: darkgreen;
+	color: white;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin: 0 1px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+#menu a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+}
+
+#menu li:hover
+{
+	background-color: green;
+}
+
+.navbar
+{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute; 
+}
+	
+.navbar li
+{
+    height: auto;
+    width: 199.9px; 
+    float: left;  
+    text-align: center; 
+    list-style: none;  
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+	transition:1s;
+}
+
+.navbar a
+{							
+    padding: 18px 0;  
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none; 
+    color: white; 
+    display: block;
+}
+
+.navbar li:hover
+{
+    background-color: darkgrey;
+} 
+
+.navbar li ul
+{
+    display: none;
+    height: auto;									
+    margin: 0; 
+    padding: 0; 
+}				
+
+.navbar li:hover ul
+{
+    display: block;
+}
+
+.navbar li ul li 
+{
+    background-color: grey;
+} 
+
+.navbar li ul li a:hover
+{
+    background-color: #a3a1a1;
+}
+
+#Présentation
+{
+	margin-top:80px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Synopsis
+{
+	margin-top:40px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Résumé
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Casting
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+table
+{
+	margin : 0 auto;
+	margin-top: 35px;
+	text-align: center;
+	
+}
+
+th
+{
+	background-image:url(fond.jpg);
+	color:white;
+	font-size: xxx-large;
+}
+
+tr
+{
+	background-color:black;
+	color:white;
+}
+
+#Descriptif
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#Bandeannonce
+{
+	margin-top:50px;
+	padding-left: 30px;
+	color: white;
+	background: linear-gradient(to left, brown, green, #003300);
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+}
+
+p
+{
+	color: white;
+	background-color:#663300;
+	padding:5px;
+	border: solid 2px black;
+}
+
+p:first-letter
+{
+	color:darkgrey;
+	text-transform:uppercase;
+	font-size: xx-large;
+}
+
+a
+{
+	text-decoration:none;
+	color: green;
+	font-weight:bold;
+}
+
+a:hover{
+	color:red;
+}
+
+.voirplus
+{
+	visibility: hidden;
+}
+
+h2
+{
+	margin-top: 10px;
+	color:lime;
+	border-bottom:solid 1px lime;
+}
+
+.picture-left
+{
+	width:160px;
+	border: solid 1px grey;
+	margin: 10px;
+	transition:0.5s;
+}
+
+.picture-left:hover
+{
+	transform: scale(1.1);
+}
+
+.text-right
+{
+	width:1000px;
+	float:right;
+	margin-top:8px;
+	margin-right:10px;
+}
+
+iframe
+{
+	margin-top:20px;
+	margin-bottom:20px;
+	width:1200px;
+	height:600px;
+}
+
+#footer{
+	background-color:darkgray;
+	color:white;
+	text-align: center;
+	font-weight: bold;
+	font-size:xx-large;
+	width: 1200px;
+	margin:0 auto;
+}
+
+#footer::first-letter{
+	color:white;
+
+}
+
+
+#buttonscroll
+{
+	display: block;
+	z-index: 99;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	position: sticky;
+	bottom: 20px;
+	right:30px;
+	margin-left:auto;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+	background-color: #663300;
+}
+
+#buttonscroll:hover,
+#buttonscroll:focus,
+#buttonscroll:focus-within 
+{
+	cursor: pointer;
+	background-color: green;
+}
